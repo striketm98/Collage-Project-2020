@@ -5,11 +5,15 @@ from os import*
 from tcl import*
 from re import*
 from enum import*
+// path of the where data shore *//
 path='D:\\College_project2020\\E-tricycle.xlsx'
+
 wb =  load_workbook(path)
 sheet = wb.active
 current_row=sheet.max_row
 current_column=sheet.max_column
+
+// define the excel file into allocation *//
 def excel():
 
     sheet.column_dimensions['A'].width = 30
